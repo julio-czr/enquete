@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Enquetes</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <h2>Criar Nova Enquete</h2>
+    <form id="enqueteForm" onsubmit="cadastrarEnquete(); return false;">
+        <label for="nome">Nome da Enquete:</label><br>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="dataInicial">Data de Início:</label><br>
+        <input type="date" id="dataInicial" name="dataInicial" required>
+        <br>
+        <label for="dataFim">Data de Fim:</label><br>
+        <input type="date" id="dataFim" name="dataFim" required>
+        <br>
+
+        <h3>Opções</h3>
+        <div id="opcoesContainer"></div>
+        <button type="button" onclick="adicionarOpcao()">Adicionar Opção</button>
+        <br><br>
+        <button type="submit">Criar Enquete</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <h2>Lista de Enquetes</h2>
+    <div id="listaEnquetes"></div>
+
+    <script src="../api/index.api.js"/>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
